@@ -10,3 +10,4 @@ setuptools==69.5.1
 wheel
 pillow
 python-dotenv
+scikit-learn
