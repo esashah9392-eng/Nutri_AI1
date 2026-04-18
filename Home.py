@@ -89,9 +89,6 @@ st.markdown("""
 
 st.title("💪 Nutri AI")
 
-</style>
-""", unsafe_allow_html=True)
-
 # ✅ HEADER
 st.markdown('<h1 class="main-header">💪 Nutri AI</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtext">Welcome to your AI Nutrition App 🚀</p>', unsafe_allow_html=True)
