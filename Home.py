@@ -1,5 +1,12 @@
 import streamlit as st
 import streamlit as st
+st.set_page_config(
+    page_title="Nutri AI", 
+    page_icon="🥗",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 
 # Initialize objects (FIX for deployment)
 from utils.meal_generator import MealGenerator
@@ -85,12 +92,7 @@ html, body, [data-testid="stAppViewContainer"] {
 # Rest of your app code...
 
 # STUNNING CSS + BACKGROUNDS
-st.set_page_config(
-    page_title="Nutri AI", 
-    page_icon="🥗",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+
 
 # COMPLETE PROFESSIONAL CSS
 st.markdown("""
