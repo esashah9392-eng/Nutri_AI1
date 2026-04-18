@@ -63,21 +63,6 @@ st.markdown("""
     font-weight: 600;
 }
 
-import streamlit as st
-
-st.set_page_config(page_title="Nutri AI", layout="wide")
-
-# SIDEBAR FIX
-st.markdown("""
-<style>
-
-/* SIDEBAR */
-[data-testid="stSidebar"] {
-    background: rgba(255, 255, 255, 0.98) !important;
-    border-radius: 20px !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
-}
-
 /* SIDEBAR TEXT */
 [data-testid="stSidebar"] * {
     color: black !important;
