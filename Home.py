@@ -32,14 +32,16 @@ st.markdown(
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* NEW CLEAN GREEN BACKGROUND - PERFECT FOR FONTS */
-html, body, [data-testid="stAppViewContainer"] {
-    background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 50%, #A5D6A7 100%) !important;
-    background-attachment: fixed !important;
-}
-</style>
-""", unsafe_allow_html=True)
+/
+import streamlit as st
 
+st.markdown("""
+    <style>
+    body {
+        background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 50%, #A5D6A7 100%) !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 /* KEEP ALL OTHER STYLES - JUST BACKGROUND CHANGED */
 .stApp {
