@@ -1,0 +1,58 @@
+{
+  "breakfast": [
+    {
+      "name": "Protein Power Smoothie",
+      "ingredients": ["Greek yogurt 150g", "Banana 1", "Spinach 50g", "Protein powder 1 scoop", "Almond milk 200ml"],
+      "instructions": "Blend all ingredients until smooth. Add ice for thickness.",
+      "nutrition": {"calories": 350, "protein": 32, "carbs": 35, "fat": 8}
+    },
+    {
+      "name": "Avocado Egg Toast",
+      "ingredients": ["Whole grain bread 2 slices", "Eggs 2", "Avocado 1/2", "Cherry tomatoes 100g"],
+      "instructions": "Toast bread, mash avocado, poach eggs, assemble with tomatoes.",
+      "nutrition": {"calories": 420, "protein": 18, "carbs": 38, "fat": 22}
+    }
+  ],
+  "lunch": [
+    {
+      "name": "Grilled Chicken Salad",
+      "ingredients": ["Chicken breast 150g", "Mixed greens 200g", "Cucumber 100g", "Cherry tomatoes 100g", "Olive oil 1 tbsp", "Lemon juice"],
+      "instructions": "Grill chicken, chop veggies, toss with oil and lemon.",
+      "nutrition": {"calories": 380, "protein": 35, "carbs": 12, "fat": 18}
+    },
+    {
+      "name": "Quinoa Veggie Bowl",
+      "ingredients": ["Quinoa 100g cooked", "Broccoli 150g", "Carrots 100g", "Chickpeas 100g", "Tahini dressing"],
+      "instructions": "Cook quinoa, steam veggies, mix with chickpeas and dressing.",
+      "nutrition": {"calories": 450, "protein": 18, "carbs": 65, "fat": 12}
+    }
+  ],
+  "dinner": [
+    {
+      "name": "Salmon with Sweet Potato",
+      "ingredients": ["Salmon fillet 150g", "Sweet potato 200g", "Asparagus 150g", "Olive oil 1 tsp"],
+      "instructions": "Bake salmon at 200°C for 15min, roast sweet potato and asparagus.",
+      "nutrition": {"calories": 520, "protein": 38, "carbs": 45, "fat": 22}
+    },
+    {
+      "name": "Beef Stir Fry",
+      "ingredients": ["Lean beef 150g", "Bell peppers 150g", "Broccoli 150g", "Brown rice 100g", "Soy sauce low-sodium"],
+      "instructions": "Stir fry beef and veggies, serve over cooked rice.",
+      "nutrition": {"calories": 480, "protein": 36, "carbs": 52, "fat": 14}
+    }
+  ],
+  "snacks": [
+    {
+      "name": "Greek Yogurt Parfait",
+      "ingredients": ["Greek yogurt 150g", "Berries 100g", "Almonds 20g"],
+      "instructions": "Layer yogurt, berries, and almonds in a glass.",
+      "nutrition": {"calories": 280, "protein": 22, "carbs": 20, "fat": 12}
+    },
+    {
+      "name": "Apple with Peanut Butter",
+      "ingredients": ["Apple 1 medium", "Peanut butter 2 tbsp"],
+      "instructions": "Slice apple and spread with peanut butter.",
+      "nutrition": {"calories": 260, "protein": 8, "carbs": 32, "fat": 16}
+    }
+  ]
+}
