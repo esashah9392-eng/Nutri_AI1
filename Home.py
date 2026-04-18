@@ -60,6 +60,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+import streamlit as st
+
+st.set_page_config(page_title="Nutri AI", layout="wide")
+
+st.markdown("""
+<style>
 .main-header {
     font-family: 'Poppins', sans-serif !important;
     font-size: 4rem !important;
@@ -68,6 +74,11 @@ st.markdown("""
     text-align: center !important;
     text-shadow: 2px 2px 6px rgba(0,0,0,0.15) !important;
 }
+</style>
+""", unsafe_allow_html=True)
+
+# Apply the style
+st.markdown('<h1 class="main-header">💪 Nutri AI</h1>', unsafe_allow_html=True)
 
 /* ALL OTHER STYLES REMAIN SAME */
 .metric-card, .stMetric {
