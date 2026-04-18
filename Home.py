@@ -74,7 +74,6 @@ st.markdown("""
 /* SIDEBAR */
 [data-testid="stSidebar"] {
     background: rgba(255, 255, 255, 0.98) !important;
-    border-radius: 20px !important;
     box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
 }
 
