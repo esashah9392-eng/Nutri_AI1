@@ -63,11 +63,22 @@ st.markdown("""
     font-weight: 600;
 }
 
-/* SIDEBAR */
+st.markdown("""
+<style>
+
+/* SIDEBAR FIX */
 [data-testid="stSidebar"] {
-    background: rgba(255,255,255,0.95);
-    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.98) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
 }
+
+/* 🔥 IMPORTANT: MAKE TEXT VISIBLE */
+[data-testid="stSidebar"] * {
+    color: #000000 !important;
+    font-weight: 600 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
