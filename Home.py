@@ -1,14 +1,14 @@
 import streamlit as st
-import streamlit as st
+
+# ✅ Page config (ONLY ONCE, TOP)
 st.set_page_config(
-    page_title="Nutri AI", 
+    page_title="Nutri AI",
     page_icon="🥗",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-
-# Initialize objects (FIX for deployment)
+# ✅ Initialize objects
 from utils.meal_generator import MealGenerator
 from utils.nutrition_calculator import NutritionCalculator
 
@@ -18,241 +18,81 @@ if "meal_generator" not in st.session_state:
 if "calculator" not in st.session_state:
     st.session_state.calculator = NutritionCalculator()
 
-import streamlit as st
-
-st.markdown(
-    "<h1 style='text-align: center;'>💪 Nutri AI</h1>",
-    unsafe_allow_html=True
-)
-
-st.markdown(
-    "<p style='text-align: center;'>Welcome to your AI Nutrition App 🚀</p>",
-    unsafe_allow_html=True
-)
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-/
-import streamlit as st
-
-st.markdown("""
-    <style>
-    body {
-        background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 50%, #A5D6A7 100%) !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-/* KEEP ALL OTHER STYLES - JUST BACKGROUND CHANGED */
-import streamlit as st
-
-st.set_page_config(page_title="Nutri AI", layout="wide")
-
+# ✅ ALL CSS IN ONE PLACE
 st.markdown("""
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* BACKGROUND */
 .stApp {
-    background: rgba(255, 255, 255, 0.98) !important;
-    backdrop-filter: blur(12px) !important;
-    border-radius: 25px !important;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.15) !important;
-    margin: 1.2rem !important;
+    background: linear-gradient(135deg, #E8F5E8, #C8E6C9, #A5D6A7);
 }
-</style>
-""", unsafe_allow_html=True)
 
-import streamlit as st
-
-st.set_page_config(page_title="Nutri AI", layout="wide")
-
-st.markdown("""
-<style>
+/* MAIN HEADER */
 .main-header {
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 4rem !important;
-    font-weight: 700 !important;
-    color: #1B5E20 !important;
-    text-align: center !important;
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.15) !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# Apply the style
-st.markdown('<h1 class="main-header">💪 Nutri AI</h1>', unsafe_allow_html=True)
-
-/* ALL OTHER STYLES REMAIN SAME */
-.metric-card, .stMetric {
-    background: rgba(255, 255, 255, 1) !important;
-    border-radius: 20px !important;
-    border: 2px solid #E8F5E8 !important;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1) !important;
-    padding: 1.8rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #1B5E20;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.15);
 }
 
-.stMetric > label {
-    color: #2E7D32 !important;
-    font-weight: 600 !important;
-    font-size: 1.2rem !important;
+/* SUBTEXT */
+.subtext {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2E7D32;
 }
 
-.stMetric > div > div {
-    color: #1B5E20 !important;
-    font-size: 2.8rem !important;
-    font-weight: 700 !important;
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
-/* BUTTONS */
+/* BUTTON */
 .stButton > button {
-    background: linear-gradient(135deg, #4CAF50, #45a049) !important;
-    color: white !important;
-    border-radius: 15px !important;
-    padding: 1rem 2.5rem !important;
-    font-weight: 600 !important;
-    box-shadow: 0 10px 30px rgba(76,175,80,0.4) !important;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border-radius: 12px;
+    padding: 0.7rem 2rem;
+    font-weight: 600;
 }
 
 /* SIDEBAR */
 [data-testid="stSidebar"] {
-    background: rgba(255, 255, 255, 0.98) !important;
-    border-radius: 20px !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important;
-}
-</style>
-""", unsafe_allow_html=True)
-# Your existing app code continues here...
-
-# Rest of your app code...
-
-# STUNNING CSS + BACKGROUNDS
-
-
-# COMPLETE PROFESSIONAL CSS
-st.markdown("""
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-    
-    .main-header {
-        font-family: 'Poppins', sans-serif;
-        font-size: 4rem !important;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-        font-weight: 700;
-        margin-bottom: 1rem;
-        text-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .metric-card {
-        background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.85));
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 1.5rem;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-        border: 1px solid rgba(255,255,255,0.2);
-        transition: all 0.3s ease;
-    }
-    
-    .metric-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 30px 60px rgba(0,0,0,0.15);
-    }
-    
-    .stMetric > label {
-        font-weight: 600 !important;
-        color: #2E7D32 !important;
-        font-size: 1.1rem !important;
-    }
-    
-    .stMetric > div > div {
-        font-size: 2.5rem !important;
-        font-weight: 700 !important;
-        color: #1B5E20 !important;
-    }
-    
-    /* Sidebar */
-    .css-1d391kg {
-        background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%) !important;
-    }
-    
-    /* Buttons */
-    .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-        color: white !important;
-        border-radius: 15px !important;
-        padding: 0.8rem 2rem !important;
-        font-weight: 600 !important;
-        border: none !important;
-        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4) !important;
-        transition: all 0.3s ease !important;
-    }
-    
-    .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6) !important;
-    }
-    
-    /* Chat bubbles */
-    .stChatMessage {
-        background: rgba(255,255,255,0.9) !important;
-        border-radius: 20px !important;
-        padding: 1.5rem !important;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
-    }
-    
-    /* Tables */
-    .dataframe {
-        border-radius: 15px !important;
-        overflow: hidden !important;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
-    }
-    
-    /* Expanders */
-    .stExpander {
-        background: linear-gradient(145deg, #ffffff, #f8f9fa) !important;
-        border-radius: 15px !important;
-        border: 2px solid #e9ecef !important;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.08) !important;
-    }
-</style>
-""", unsafe_allow_html=True)
-
-# Animated Background
-st.markdown("""
-<div style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-">
-</div>
-<style>
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Glassmorphism Main Container
-st.markdown("""
-<div style="
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
-    border-radius: 30px;
-    padding: 2rem;
-    margin: 1rem;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-">
-""", unsafe_allow_html=True)
+# ✅ HEADER
+st.markdown('<h1 class="main-header">💪 Nutri AI</h1>', unsafe_allow_html=True)
+st.markdown('<p class="subtext">Welcome to your AI Nutrition App 🚀</p>', unsafe_allow_html=True)
 
+# ✅ SAMPLE CONTENT
+st.markdown('<div class="card">', unsafe_allow_html=True)
+
+st.write("### Enter your details")
+
+age = st.number_input("Age")
+weight = st.number_input("Weight")
+goal = st.selectbox("Goal", ["Lose Weight", "Gain Muscle"])
+
+if st.button("Generate Plan"):
+    if goal == "Lose Weight":
+        calories = weight * 20
+    else:
+        calories = weight * 30
+
+    st.success(f"Recommended Calories: {calories}")
+
+st.markdown('</div>', unsafe_allow_html=True)
 # Your existing app code continues here...
 # ... rest of your app.py code
 
