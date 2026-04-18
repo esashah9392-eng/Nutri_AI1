@@ -37,6 +37,9 @@ html, body, [data-testid="stAppViewContainer"] {
     background: linear-gradient(135deg, #E8F5E8 0%, #C8E6C9 50%, #A5D6A7 100%) !important;
     background-attachment: fixed !important;
 }
+</style>
+""", unsafe_allow_html=True)
+
 
 /* KEEP ALL OTHER STYLES - JUST BACKGROUND CHANGED */
 .stApp {
