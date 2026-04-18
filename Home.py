@@ -44,6 +44,12 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 /* KEEP ALL OTHER STYLES - JUST BACKGROUND CHANGED */
+import streamlit as st
+
+st.set_page_config(page_title="Nutri AI", layout="wide")
+
+st.markdown("""
+<style>
 .stApp {
     background: rgba(255, 255, 255, 0.98) !important;
     backdrop-filter: blur(12px) !important;
@@ -51,6 +57,8 @@ st.markdown("""
     box-shadow: 0 25px 60px rgba(0,0,0,0.15) !important;
     margin: 1.2rem !important;
 }
+</style>
+""", unsafe_allow_html=True)
 
 .main-header {
     font-family: 'Poppins', sans-serif !important;
