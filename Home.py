@@ -18,9 +18,17 @@ if "meal_generator" not in st.session_state:
 if "calculator" not in st.session_state:
     st.session_state.calculator = NutritionCalculator()
 
-st.title("     💪 Nutri AI    ")
-st.write("        Welcome to your AI Nutrition App 🚀      ")
-st.markdown("""
+import streamlit as st
+
+st.markdown(
+    "<h1 style='text-align: center;'>💪 Nutri AI</h1>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    "<p style='text-align: center;'>Welcome to your AI Nutrition App 🚀</p>",
+    unsafe_allow_html=True
+)
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
